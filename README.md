@@ -27,6 +27,10 @@
 
 <br/>
 
+
+### 구성
+배포 : (optional) fastapi - docker 
+
 ### 참고 레퍼런스
 - 바닐라 자바스크립트로 무한 루프 슬라이드 구현 [https://im-developer.tistory.com/97]
 - <br/>
