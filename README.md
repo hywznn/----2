@@ -5,7 +5,6 @@
 1)방명록 구현 O
 2)fastapi docker 배포 O
 
-One Paragraph of project description goes here / 프로젝트의 전반적인 내용에 대한 요약을 여기에 적습니다
 
 
 
