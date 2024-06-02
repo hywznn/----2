@@ -33,5 +33,5 @@
 
 ### 참고 레퍼런스
 - 바닐라 자바스크립트로 무한 루프 슬라이드 구현 [https://im-developer.tistory.com/97]
-- <br/>
+<br/>
 - JS로 Pagination 구현하기 [https://velog.io/@eunoia/JS%EB%A1%9C-Pagination-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0]
