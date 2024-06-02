@@ -43,6 +43,36 @@ nav {
     margin-bottom: 20px;
 }
 
+/* .carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0; 
+    height: 70vh; 
+} */
+
+/* .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px; 
+}
+
+.portfolio-item {
+    flex: 0 0 calc(33.33% - 20px);
+    text-align: center;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, height 0.3s ease, border-radius 0.3s ease;
+} */
+
 .carousel {
     position: relative;
     display: flex;
@@ -59,11 +89,12 @@ nav {
 .carousel-inner {
     display: flex;
     transition: transform 0.5s ease;
+    width: 100%; /* 너비를 100%로 설정 */
     gap: 20px; /* 아이템 사이의 여백 설정 */
 }
 
 .portfolio-item {
-    flex: 0 0 calc(33.33% - 20px); /* gap을 고려한 너비 설정 */
+    flex: 0 0 calc(33.33% - 20px); /* 3개의 아이템이 보이도록 너비 설정 */
     text-align: center;
     background: #fff;
     color: #000;
@@ -73,11 +104,14 @@ nav {
     transition: transform 0.3s ease, height 0.3s ease, border-radius 0.3s ease;
 }
 
-.portfolio-item img {
+
+
+
+ .portfolio-item img {
     width: 100%;
     height: auto;
     border-radius: 10px 10px 0 0;
-}
+} 
 
 .portfolio-item h3 {
     margin: 15px 0;
@@ -129,11 +163,6 @@ nav {
     z-index: 1;
 }
 
-.portfolio-item.left, .portfolio-item.right {
-    height: 85%; /* 기본 높이보다 작게 */
-    border-radius: 20px;
-    z-index: 0;
-}
 
 /* 모달 스타일 */
 .modal {

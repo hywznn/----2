@@ -159,8 +159,9 @@ nav ul li input {
 
 /* projects */
 
-.projects {
-    display: flex;
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     gap: 20px;
 }

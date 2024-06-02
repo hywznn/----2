@@ -29,6 +29,26 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.style.display = 'block';
     }
 
+    // function updateCarousel() {
+    //     items.forEach((item, index) => {
+    //         item.classList.remove('center', 'left', 'right');
+    //         if (index === currentIndex % items.length) {
+    //             item.classList.add('center');
+    //         } else if (index === (currentIndex - 1 + items.length) % items.length) {
+    //             item.classList.add('left');
+    //         } else if (index === (currentIndex + 1) % items.length) {
+    //             item.classList.add('right');
+    //         }
+    //     });
+    //     const offset = -33.33 * (currentIndex - 1) + '%'; // 가운데를 기준으로 위치 조정
+    //     carouselInner.style.transition = 'transform 0.5s ease';
+    //     carouselInner.style.transform = `translateX(${offset})`;
+
+    //     // Update pagination
+    //     pageDots.forEach(dot => dot.classList.remove('dot_active'));
+    //     pageDots[currentIndex % items.length].classList.add('dot_active');
+    // }
+
     function updateCarousel() {
         items.forEach((item, index) => {
             item.classList.remove('center', 'left', 'right');
@@ -40,14 +60,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 item.classList.add('right');
             }
         });
-        const offset = -33.33 * (currentIndex - 1) + '%'; // 가운데를 기준으로 위치 조정
+        const offset = -33.33 * (currentIndex - 1) + '%'; // 각 아이템이 33.33% 차지하도록 조정
         carouselInner.style.transition = 'transform 0.5s ease';
         carouselInner.style.transform = `translateX(${offset})`;
-
-        // Update pagination
+    
+        // 페이지네이션 업데이트
         pageDots.forEach(dot => dot.classList.remove('dot_active'));
         pageDots[currentIndex % items.length].classList.add('dot_active');
     }
+    
+
 
     document.querySelectorAll('.portfolio-item').forEach((item, index) => {
         item.addEventListener('click', () => {
@@ -88,6 +110,12 @@ document.addEventListener('DOMContentLoaded', () => {
             updateCarousel();
         });
     });
+    // 자동 슬라이드 기능 추가
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % items.length;
+        updateCarousel();
+    }, 3000); // 3초 간격
+
 
     updateCarousel();
 });
