@@ -7,6 +7,8 @@
 
 One Paragraph of project description goes here / 프로젝트의 전반적인 내용에 대한 요약을 여기에 적습니다
 
+
+
 ## 구성
 메인 : 프로필 및 스택, 활동 및 이력, 최근 프로젝트, 방명록 남기기
 - header(navbar), middle(grid), footer(instagram, github)
